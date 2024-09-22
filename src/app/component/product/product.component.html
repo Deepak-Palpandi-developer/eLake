@@ -1,0 +1,125 @@
+<ng-container *ngIf="view === 'grid'">
+    <div class="d-flex mt-2 p-2">
+        <div class="card p-4 bg-white position-relative text-center" style="border-radius: 15px; max-width: 400px;">
+            <!-- Product ID -->
+            <div class="position-absolute top-0 end-0 text-muted pe-2 pt-2" style="font-size: 12px;">
+                id: 12345689
+            </div>
+
+            <!-- Product Image and Icons -->
+            <div class="position-relative">
+                <img src="images/iphone-16-pro.jpg" width="200" class="mt-2 mb-2">
+
+                <!-- Comparison and Favorite Icons -->
+                <div class="position-absolute top-0 end-0">
+                    <button class="btn btn-light rounded-circle me-2 mt-2"
+                        style="box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);">
+                        <i class="bi bi-sliders"></i>
+                    </button>
+                    <button class="btn btn-light rounded-circle me-2 mt-2"
+                        style="box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);">
+                        <i class="bi bi-heart"></i>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Product Name and Rating -->
+            <div class="about-product text-start">
+                <p class="fw-bold card-title">Apple iPhone 16 Pro</p>
+                <div class="d-flex align-items-center mb-2">
+                    <div class="text-warning">
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-half"></i>
+                    </div>
+                    <p class="ms-2 mb-0 text-muted">4.25 (153 reviews)</p>
+                </div>
+            </div>
+            <p class="text-muted text-start" style="font-size: 13px;">
+                Peak performance with active noise cancellation. Sennheiser’s new MOMENTUM Wireless – Closed
+                circumaural headphone featuring Bluetooth® wireless technology and NoiseGard Hybrid active
+                noise cancelation.
+            </p>
+
+            <!-- Pricing Section -->
+            <div class="text-start">
+                <p class="text-muted" style="font-size: 13px;">Shipping and taxes extra</p>
+                <p class="text-muted" style="text-decoration: line-through;">₹1,49,900.00</p>
+                <div class="d-flex align-items-center">
+                    <span class="badge bg-primary me-2">-10%</span>
+                    <p class="text-danger fw-bold fs-4 mb-0">₹1,19,900.00</p>
+                </div>
+            </div>
+
+            <!-- Add to Cart Button (Full Width) -->
+            <div class="d-flex justify-content-center mt-4">
+                <button class="btn btn-primary w-100" style="border-radius: 30px;">
+                    <i class="bi bi-cart me-2"></i> Add to Cart
+                </button>
+            </div>
+        </div>
+    </div>
+</ng-container>
+
+<ng-container *ngIf="view === 'list'">
+    <div class="container mt-5">
+        <div class="card p-4 bg-white"
+            style="max-width: 850px; border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
+            <div class="row g-0">
+                <!-- Product Image -->
+                <div class="col-md-6 d-flex justify-content-center align-items-center">
+                    <img src="images/iphone-16-pro.jpg" class="img-fluid" style="max-width: 300px;" alt="Product Image">
+                </div>
+
+                <!-- Product Info -->
+                <div class="col-md-6">
+                    <div class="card-body">
+                        <!-- Product ID and Spec Link -->
+                        <div class="d-flex justify-content-end">
+                            <p class="text-muted">id: 506250</p>
+                        </div>
+
+                        <!-- Product Title -->
+                        <h3 class="card-title fw-bold">Apple iPhone 16 Pro</h3>
+
+                        <!-- Rating -->
+                        <div class="d-flex align-items-center mb-2">
+                            <div class="text-warning">
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-half"></i>
+                            </div>
+                            <p class="ms-2 mb-0 text-muted">4.25 (153 reviews)</p>
+                        </div>
+                        <!-- Product Description -->
+                        <p class="text-muted">
+                            Peak performance with active noise cancellation. Sennheiser’s new MOMENTUM Wireless – Closed
+                            circumaural headphone featuring Bluetooth® wireless technology and NoiseGard Hybrid active
+                            noise cancelation.
+                        </p>
+                        <!-- Pricing Section -->
+                        <p class="text-muted">Shipping and taxes extra</p>
+                        <div class="text-start mt-3">
+                            <p class="text-muted" style="text-decoration: line-through;">₹1,49,900.00</p>
+                            <div class="d-flex align-items-center">
+                                <span class="badge bg-primary me-2">-10%</span>
+                                <p class="text-danger fw-bold fs-4 mb-0">₹1,19,900.00</p>
+                            </div>
+                        </div>
+
+                        <!-- Quantity and Add to Cart -->
+                        <div class="d-flex align-items-center mt-3">
+                            <button class="btn btn-primary ms-3 px-4">
+                                <i class="bi bi-cart me-2"></i> Add to Cart
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</ng-container>

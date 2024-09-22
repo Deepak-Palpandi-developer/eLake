@@ -1,0 +1,25 @@
+<!-- Nav Bar -->
+<app-nav-bar></app-nav-bar>
+
+<div class="container-fluid mt-3">
+  <div *ngFor="let suggestedProduct of suggestedProducts">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-12">
+          <div class="banner">
+            <img
+              src="{{ suggestedProduct?.bannerImg }}"
+              alt="Banner"
+              class="img-fluid"
+            />
+          </div>
+          <div>
+            <app-product-list
+              [category]="suggestedProduct.category"
+            ></app-product-list>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
